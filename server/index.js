@@ -23,6 +23,14 @@ app.use(
   })
 );
 
+// User endpoints
+
+// Item endpoints
+
+// Inventory endpoints
+
+// Character endpoints
+
 let db;
 massive(CONNECTION_STRING).then(databaseInstance => {
   db = databaseInstance;
