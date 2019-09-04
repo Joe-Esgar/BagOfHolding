@@ -50,7 +50,12 @@ create table items
     prop_two varchar(24),
     prop_three varchar(24),
     user_created boolean not null,
-    number_of_uses integer
+)
+
+create table uniqueUses
+(
+    user_id int references users(user_id),
+    item_id int references items(item_id)
 )
 
 create table inventories
