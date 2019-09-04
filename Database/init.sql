@@ -40,7 +40,6 @@ create table items
     value int not null,
     currency string not null,
     weight int,
-    is_broken boolean not null,
     description text,
     damage int,
     dice varchar(3),
@@ -49,13 +48,16 @@ create table items
     category varchar(24),
     prop_one varchar(24),
     prop_two varchar(24),
-    prop_three varchar(24)
+    prop_three varchar(24),
+    user_created boolean not null,
+    number_of_uses integer
 )
 
 create table inventories
 (
     char_id int references characters(char_id),
-    item_id int references items(item_id)
+    item_id int references items(item_id),
+    is_broken boolean not null,
 )
 
 
