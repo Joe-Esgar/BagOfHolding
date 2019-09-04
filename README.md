@@ -1,8 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Purpose
 
-## Available Scripts
-
-In the project directory, you can run:
+Bag of Holding is a Web Application that allows users to register to create and manage table top game inventories for multiple characters. Users can create their own items or select items from a list of pre-created items. Users can also view items created by other users and add those to their own inventories or games. These user created items track and display the number of uses by other users. This creates a pseudo-rating system and also allows the community to view unique items and use them in their own games.
 
 ### `npm start`
 
